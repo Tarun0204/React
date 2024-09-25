@@ -7,7 +7,7 @@ import Link from "next/link";
 import clsx from "clsx";
 import { useActiveSectionContext } from "@/context/active-section-context";
 
-export default function Header() {
+const Navbar = () => {
   const { activeSection, setActiveSection, setTimeOfLastClick } =
     useActiveSectionContext();
 
@@ -62,4 +62,6 @@ export default function Header() {
       </nav>
     </header>
   );
-}
+};
+
+export default Navbar;
